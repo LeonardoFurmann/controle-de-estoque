@@ -10,14 +10,19 @@ public class Estoque {
 		produtos.add(p);
 	}
 	
-	public void comprar(int codigo, int quantidade_comprada, double preco) {
+	
+		void listarProdutosAbaixoDoMinimo(){
+			
+		for (Produto produto : produtos) {	
+			
+			if(produto.produtoAbaixoDoMinimo()) {
+				
+				produto.listarProduto();
+			} else {}
+			
+		}
+			
 	}
-	
-	
-	public ArrayList<Produto> estoqueAbaixoDoMinimo(){
-		return null;
-	}
-	
 
-	
+
 }
